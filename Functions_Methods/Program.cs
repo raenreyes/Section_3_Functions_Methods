@@ -4,7 +4,17 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello This is my repo for section 3");
+            WriteSomething();
+            WriteSomethingSpecific("I am a argument and called from a method");
+        }
+        public static void WriteSomething()
+        {
+            Console.WriteLine("I am called from a method");
+           
+        }
+        public static void WriteSomethingSpecific(string myText) 
+        {
+            Console.WriteLine(myText);
         }
     }
 }
