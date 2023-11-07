@@ -3,17 +3,18 @@
     internal class Program
     {
         static void Main(string[] args)
-        {   
-            Console.WriteLine(Add(15,31));
-            Console.WriteLine(Mulitply(4,6));
-        }
-        public static int Add(int param1, int param2)
         {
-            return param1 + param2;
+            string friend1 = "Frank";
+            string friend2 = "Billy";
+            string friend3 = "Raen";
+
+            Console.WriteLine(GreetFriend(friend1));
+            Console.WriteLine(GreetFriend(friend2));
+            Console.WriteLine(GreetFriend(friend3));
         }
-        public static int Mulitply(int param1, int param2)
+        public static string GreetFriend(string friend)
         {
-            return param1 * param2;
+            return "Hello " + friend;
         }
     }
 }
