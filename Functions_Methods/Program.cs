@@ -3,18 +3,17 @@
     internal class Program
     {
         static void Main(string[] args)
-        {
-            WriteSomething();
-            WriteSomethingSpecific("I am a argument and called from a method");
+        {   
+            Console.WriteLine(Add(15,31));
+            Console.WriteLine(Mulitply(4,6));
         }
-        public static void WriteSomething()
+        public static int Add(int param1, int param2)
         {
-            Console.WriteLine("I am called from a method");
-           
+            return param1 + param2;
         }
-        public static void WriteSomethingSpecific(string myText) 
+        public static int Mulitply(int param1, int param2)
         {
-            Console.WriteLine(myText);
+            return param1 * param2;
         }
     }
 }
