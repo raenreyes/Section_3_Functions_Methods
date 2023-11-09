@@ -6,25 +6,25 @@ namespace Functions_Methods
     {
         static void Main(string[] args)
         {
+           
 
-            AddCount("hey there !HEY THERE !");
+            Console.WriteLine(AddNumbers());
+
         }
-
-        public static void AddCount(string letter)
+        public static int AddNumbers ()
         {
-            int counter = 0;
-           for (int i = 0; i < letter.Length; i++)
-            {
-                counter++;
-            }
-           Console.WriteLine(counter);
+            Console.WriteLine("Please enter your first number you would like to add: ");
+            string input1 = Console.ReadLine();
+
+            Console.WriteLine("Please enter your second number you would like to add: ");
+            string input2 = Console.ReadLine();
+            int number1 = int.Parse(input1);
+            int number2 = int.Parse(input2);
+            
+            int result = number1 + number2;
+            return result;
+
+  
         }
-        public static string LowUpper (string text)
-        {   
-            string low = text.ToLower ();
-            string high = text.ToUpper ();
-            return low + high;
-        }
-       
     }
 }
