@@ -1,20 +1,30 @@
-﻿namespace Functions_Methods
+﻿
+
+namespace Functions_Methods
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            string friend1 = "Frank";
-            string friend2 = "Billy";
-            string friend3 = "Raen";
 
-            Console.WriteLine(GreetFriend(friend1));
-            Console.WriteLine(GreetFriend(friend2));
-            Console.WriteLine(GreetFriend(friend3));
+            AddCount("hey there !HEY THERE !");
         }
-        public static string GreetFriend(string friend)
+
+        public static void AddCount(string letter)
         {
-            return "Hello " + friend;
+            int counter = 0;
+           for (int i = 0; i < letter.Length; i++)
+            {
+                counter++;
+            }
+           Console.WriteLine(counter);
         }
+        public static string LowUpper (string text)
+        {   
+            string low = text.ToLower ();
+            string high = text.ToUpper ();
+            return low + high;
+        }
+       
     }
 }
